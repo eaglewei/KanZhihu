@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4025844A1C255D9E00293FD4 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402584491C255D9E00293FD4 /* PostViewController.m */; };
 		4025844D1C2564B700293FD4 /* QuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4025844C1C2564B700293FD4 /* QuestionCell.m */; };
+		4065459D1C5758D0006B8D1F /* TopUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4065459C1C5758D0006B8D1F /* TopUsersViewController.m */; };
+		406545A01C5760C6006B8D1F /* TopUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4065459F1C5760C6006B8D1F /* TopUserCell.m */; };
 		409793B01C256AE2007581F6 /* AnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 409793AF1C256AE2007581F6 /* AnswerCell.m */; };
 		409EF6B21C2BEC020047989A /* TopAnswersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409EF6B11C2BEC020047989A /* TopAnswersViewController.m */; };
 		409EF6B51C2BEEE40047989A /* TopAnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 409EF6B41C2BEEE40047989A /* TopAnswerCell.m */; };
@@ -29,6 +31,10 @@
 		402584491C255D9E00293FD4 /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
 		4025844B1C2564B700293FD4 /* QuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionCell.h; sourceTree = "<group>"; };
 		4025844C1C2564B700293FD4 /* QuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionCell.m; sourceTree = "<group>"; };
+		4065459B1C5758D0006B8D1F /* TopUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopUsersViewController.h; sourceTree = "<group>"; };
+		4065459C1C5758D0006B8D1F /* TopUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopUsersViewController.m; sourceTree = "<group>"; };
+		4065459E1C5760C6006B8D1F /* TopUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopUserCell.h; sourceTree = "<group>"; };
+		4065459F1C5760C6006B8D1F /* TopUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopUserCell.m; sourceTree = "<group>"; };
 		409793AE1C256AE2007581F6 /* AnswerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerCell.h; sourceTree = "<group>"; };
 		409793AF1C256AE2007581F6 /* AnswerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerCell.m; sourceTree = "<group>"; };
 		409EF6B01C2BEC020047989A /* TopAnswersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAnswersViewController.h; sourceTree = "<group>"; };
@@ -92,14 +98,16 @@
 				40C717361C2545670098E150 /* HomeViewController.m */,
 				402584481C255D9E00293FD4 /* PostViewController.h */,
 				402584491C255D9E00293FD4 /* PostViewController.m */,
+				4065459B1C5758D0006B8D1F /* TopUsersViewController.h */,
+				4065459C1C5758D0006B8D1F /* TopUsersViewController.m */,
 				40A42FF51C2A9CA700BD01E0 /* UserViewController.h */,
 				40A42FF61C2A9CA700BD01E0 /* UserViewController.m */,
 				409EF6B01C2BEC020047989A /* TopAnswersViewController.h */,
 				409EF6B11C2BEC020047989A /* TopAnswersViewController.m */,
 				40C717241C25409A0098E150 /* Main.storyboard */,
-				40EC5DDB1C269EDC00F38CAE /* Views */,
-				40C717271C25409A0098E150 /* Assets.xcassets */,
 				40C717291C25409A0098E150 /* LaunchScreen.storyboard */,
+				40C717271C25409A0098E150 /* Assets.xcassets */,
+				40EC5DDB1C269EDC00F38CAE /* Cells */,
 				40C7172C1C25409A0098E150 /* Info.plist */,
 				40C7171B1C25409A0098E150 /* Supporting Files */,
 			);
@@ -114,19 +122,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		40EC5DDB1C269EDC00F38CAE /* Views */ = {
+		40EC5DDB1C269EDC00F38CAE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				40C717381C2548C40098E150 /* PostCell.h */,
-				40C717391C2548C40098E150 /* PostCell.m */,
-				4025844B1C2564B700293FD4 /* QuestionCell.h */,
-				4025844C1C2564B700293FD4 /* QuestionCell.m */,
 				409793AE1C256AE2007581F6 /* AnswerCell.h */,
-				409793AF1C256AE2007581F6 /* AnswerCell.m */,
+				40C717381C2548C40098E150 /* PostCell.h */,
+				4025844B1C2564B700293FD4 /* QuestionCell.h */,
 				409EF6B31C2BEEE40047989A /* TopAnswerCell.h */,
+				4065459E1C5760C6006B8D1F /* TopUserCell.h */,
+				409793AF1C256AE2007581F6 /* AnswerCell.m */,
+				40C717391C2548C40098E150 /* PostCell.m */,
+				4025844C1C2564B700293FD4 /* QuestionCell.m */,
 				409EF6B41C2BEEE40047989A /* TopAnswerCell.m */,
+				4065459F1C5760C6006B8D1F /* TopUserCell.m */,
 			);
-			name = Views;
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		73F18580D37D3526C1CF83EE /* Frameworks */ = {
@@ -291,6 +301,8 @@
 				40A42FF71C2A9CA700BD01E0 /* UserViewController.m in Sources */,
 				4025844A1C255D9E00293FD4 /* PostViewController.m in Sources */,
 				4025844D1C2564B700293FD4 /* QuestionCell.m in Sources */,
+				406545A01C5760C6006B8D1F /* TopUserCell.m in Sources */,
+				4065459D1C5758D0006B8D1F /* TopUsersViewController.m in Sources */,
 				409EF6B51C2BEEE40047989A /* TopAnswerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
