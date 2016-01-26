@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="x5w-Qs-1Xd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g4G-ze-XhC">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -71,7 +70,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozf-8j-BAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1172" y="375.75"/>
+            <point key="canvasLocation" x="1984" y="375"/>
         </scene>
         <!--Post-->
         <scene sceneID="hZH-UJ-78d">
@@ -187,7 +186,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FiU-mu-S3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2036" y="377"/>
+            <point key="canvasLocation" x="2848" y="377"/>
         </scene>
         <!--User-->
         <scene sceneID="dDG-yP-9HV">
@@ -402,7 +401,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Htj-ak-kiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2904" y="375"/>
+            <point key="canvasLocation" x="3716" y="375"/>
         </scene>
         <!--Top Answers-->
         <scene sceneID="xXI-Ak-Jgf">
@@ -462,12 +461,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHn-w5-4xY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3745" y="375"/>
+            <point key="canvasLocation" x="4557" y="375"/>
         </scene>
         <!--Home Navigation-->
         <scene sceneID="oVW-2c-ekV">
             <objects>
                 <navigationController title="Home Navigation" automaticallyAdjustsScrollViewInsets="NO" id="x5w-Qs-1Xd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="Home" id="VWY-4c-S2k"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hXs-A9-ohJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -480,12 +480,30 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxF-H4-TgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="360" y="377"/>
+            <point key="canvasLocation" x="1172" y="377"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Co9-ys-7mC">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="g4G-ze-XhC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="3Fg-Hf-lUs">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="x5w-Qs-1Xd" kind="relationship" relationship="viewControllers" id="i3B-4A-654"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nud-7X-rCV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="375"/>
         </scene>
     </scenes>
     <resources>
         <image name="Agree" width="33" height="33"/>
         <image name="DefaultAvatar" width="66" height="66"/>
+        <image name="Home" width="25" height="25"/>
         <image name="Thanks" width="33" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
