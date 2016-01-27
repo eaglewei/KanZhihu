@@ -7,10 +7,9 @@
 //
 
 #import "UserViewController.h"
-#import <SDWebImage/UIImageView+WebCache.h>
-#import "TopAnswersViewController.h"
 
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#import "TopAnswersViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface UserViewController ()
 
@@ -29,8 +28,7 @@
 
 @implementation UserViewController
 
-- (void)setUserInfo:(NSDictionary *)userInfo
-{
+- (void)setUserInfo:(NSDictionary *)userInfo {
     _userInfo = userInfo;
     
     [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:self.userInfo[@"avatar"]]
@@ -61,16 +59,14 @@
     self.tableView.userInteractionEnabled = YES;
 }
 
-- (IBAction)homepageButtonTouched:(id)sender
-{
+- (IBAction)homepageButtonTouched:(id)sender {
     NSString *URLString = [NSString stringWithFormat:@"http://www.zhihu.com/people/%@", self.userHash];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URLString]];
 }
 
 #pragma mark - UIViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     self.tableView.estimatedRowHeight = 169.5f;

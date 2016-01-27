@@ -191,7 +191,7 @@
         <!--User-->
         <scene sceneID="dDG-yP-9HV">
             <objects>
-                <tableViewController title="User" id="eUd-VA-Sza" customClass="UserViewController" sceneMemberID="viewController">
+                <tableViewController title="User" hidesBottomBarWhenPushed="YES" id="eUd-VA-Sza" customClass="UserViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="169.5" sectionHeaderHeight="18" sectionFooterHeight="18" id="LtE-vb-SaE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

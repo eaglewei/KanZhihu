@@ -69,11 +69,18 @@
     [self loadMore];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:YES];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.destinationViewController isKindOfClass:[UserViewController class]]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDictionary *user = self.topUsers[indexPath.row];
-        ((UserViewController *)segue.destinationViewController).userHash = user[@"hash"];
+        UserViewController *uvc = segue.destinationViewController;
+        uvc.navigationItem.title = user[@"name"];
+        uvc.userHash = user[@"hash"];
     }
 }
 
