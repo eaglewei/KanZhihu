@@ -55,6 +55,7 @@
         NSDictionary *post = self.posts[indexPath.row];
         NSArray *array = [post[@"date"] componentsSeparatedByString:@"-"];
         PostViewController *pvc = segue.destinationViewController;
+        pvc.picURL = [NSURL URLWithString:post[@"pic"]];
         pvc.postURL = [NSURL URLWithString:({
             NSMutableString *string = [[NSMutableString alloc] init];
             [string appendString:@"http://api.kanzhihu.com/getpostanswers/"];

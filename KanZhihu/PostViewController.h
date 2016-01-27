@@ -10,6 +10,7 @@
 
 @interface PostViewController : UITableViewController
 
-@property (strong, nonatomic) NSURL *postURL;
+@property (nonatomic, strong) NSURL *picURL;
+@property (nonatomic, strong) NSURL *postURL;
 
 @end

@@ -7,9 +7,13 @@
 //
 
 #import "PostViewController.h"
-#import "UserViewController.h"
-#import "QuestionCell.h"
+
 #import "AnswerCell.h"
+#import "QuestionCell.h"
+#import "UserViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 
 @interface PostViewController ()
 
@@ -24,9 +28,11 @@
     [super viewDidLoad];
     
     self.clearsSelectionOnViewWillAppear = NO;
-    
     self.tableView.estimatedRowHeight = 85.5;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
+    UIImageView *headerView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH / 2)];
+    [headerView sd_setImageWithURL:self.picURL];
+    self.tableView.tableHeaderView = headerView;
     
     [[[NSURLSession sharedSession] dataTaskWithURL:self.postURL
                                  completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response,
@@ -40,8 +46,10 @@
                                      self.answers = json[@"answers"];
                                      dispatch_async(dispatch_get_main_queue(), ^{
                                          [self.tableView reloadData];
+                                         
                                      });
                                  }] resume];
+    [self.tableView setContentOffset:CGPointMake(0, SCREEN_WIDTH / 2) animated:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

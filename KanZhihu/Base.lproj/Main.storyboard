@@ -75,7 +75,7 @@
         <!--Post-->
         <scene sceneID="hZH-UJ-78d">
             <objects>
-                <tableViewController title="Post" id="xpP-f6-5vy" customClass="PostViewController" sceneMemberID="viewController">
+                <tableViewController title="Post" hidesBottomBarWhenPushed="YES" id="xpP-f6-5vy" customClass="PostViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="71" sectionHeaderHeight="18" sectionFooterHeight="18" id="cbp-UB-TBq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -638,6 +638,6 @@
         <image name="TopUsers" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0z9-wP-rlM"/>
+        <segue reference="z19-It-Kou"/>
     </inferredMetricsTieBreakers>
 </document>
